@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# 数据集 / 权重 / 索引 / 日志（体积大，可重新生成）
+NN_step/data/
+NN_step/models/
+NN_step/logs/
+RAG_step/index/
+LoRA_step/data/
+LoRA_step/outputs/**/*.pt
+LoRA_step/outputs/**/*.log

@@ -1,0 +1,16 @@
+[project]
+name = "lora-from-scratch"
+version = "0.1.0"
+description = "从零实现 LoRA，并微调 ResNet 和 Swin Transformer"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "numpy<2",
+    "torch==2.2.2",
+    "torchvision==0.17.2",
+]
+
+# 镜像源与 workspace 定义统一放在仓库根目录 pyproject.toml
+[tool.uv]
+package = false

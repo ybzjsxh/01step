@@ -1,0 +1,16 @@
+[project]
+name = "step-01"
+version = "0.1.0"
+description = "从零手写神经网络 / RAG / LoRA 三个学习项目的 monorepo"
+requires-python = ">=3.12,<3.13"
+dependencies = []
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["NN_step", "RAG_step", "LoRA_step"]
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true

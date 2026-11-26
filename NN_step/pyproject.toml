@@ -1,0 +1,18 @@
+[project]
+name = "nn-step"
+version = "0.1.0"
+description = "纯 numpy 从零实现 MLP / CNN，跑 MNIST、EMNIST、CIFAR-10"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy>=1.26",
+    "matplotlib>=3.8,<4",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+# 仅 CIFAR-10 第一次从 parquet 转换时需要，转完（已有 .npz 缓存）不再需要
+parquet = ["pyarrow>=15"]
+
+[tool.uv]
+package = false
